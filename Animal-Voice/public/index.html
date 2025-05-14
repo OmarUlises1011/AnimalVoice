@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Voice - Protege a los que no tienen voz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Animal Voice</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="login.html" id="loginLink">Iniciar sesión</a></li>
+                    
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+      
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Denuncia el maltrato animal</h1>
+                <p>Juntos podemos hacer la diferencia. Alza tu voz por quienes no pueden.</p>
+                <a href="dashboard.html" class="btn-1">Realizar denuncia</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="general container" id="servicios">
+        <h2>Nuestros Programas</h2>
+        <div class="general-content">
+            <div class="general-1 txt">
+                <h3>Rescate Animal</h3>
+                <p>Actuamos ante denuncias y salvamos animales en situaciones de riesgo.</p>
+            </div>
+            <div class="general-2 txt">
+                <h3>Rehabilitación</h3>
+                <p>Brindamos atención médica, alimentación y cuidados a animales rescatados.</p>
+            </div>
+            <div class="general-3 txt">
+                <h3>Adopciones</h3>
+                <p>Buscamos familias responsables para dar una segunda oportunidad a nuestros animales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-1">
+        <div class="info-content container">
+            <h2>Información</h2>
+            <div class="info-circle">
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>+800</h3>
+                    </div>
+                    <p>Más de 800 casos de maltrato animal documentados desde 2020.</p>
+                </div>
+
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>Adopta</h3>
+                    </div>
+                    <p>Adoptar es un acto de amor que salva vidas y crea lazos inquebrantables.</p>
+                </div>
+
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>¿Cómo ayudar?</h3>
+                    </div>
+                    <p>Adopta, dona, sé voluntario o reporta casos de maltrato. ¡Cada acción cuenta!</p>
+                </div>
+
+                <div class="circle-txt">
+                    <div class="circle-1">
+                        <h3>Beneficios</h3>
+                    </div>
+                    <p>Mejoras tu salud mental y emocional al dar un hogar a un ser que lo necesita.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="general g2 container" id="equipo">
+        <h2>Nuestro equipo</h2>
+        <div class="general-content">
+            <div class="general-4 txt">
+                <h3>Nova Abud Jorge Ricardo</h3>
+                <p>Profesionales certificados brindando atención a animales rescatados.</p>
+            </div>
+            <div class="general-6 txt">
+                <h3>Hernandez Perez Omar Ulises </h3>
+                <p>Personas comprometidas con el bienestar animal en cada rescate y jornada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-2" id="testimonios">
+        <div class="info-content container">
+            <h2>Testimonios</h2>
+            <div class="testi">
+                <div class="testi-left">
+                    <div class="testi-txt">
+                        <img src="images/perfil1.png" alt="Testimonio 1">
+                        <h3>María López</h3>
+                        <p>“Gracias a Animal Voice adopté a Luna, una perrita increíble que cambió mi vida.”</p>
+                    </div>
+                    <div class="testi-txt">
+                        <img src="images/perfil2.png" alt="Testimonio 2">
+                        <h3>Carlos Méndez</h3>
+                        <p>“Denuncié un caso de maltrato y actuaron de inmediato. Son increíbles.”</p>
+                    </div>
+                </div>
+                <div class="testi-right">
+                    <div class="testi-txt">
+                        <img src="images/perfil3.png" alt="Testimonio 3">
+                        <h3>Lucía Herrera</h3>
+                        <p>“Ser voluntaria en esta organización ha sido una de las mejores decisiones de mi vida.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container" id="contacto">
+        <h2>Contacto</h2>
+        
+        <div class="footer-txt">
+            <p>© 2025 Animal Voice. Todos los derechos reservados. contacto@animalvoice.org</p>
+        </div>
+    </footer>
+
+    <script>
+        // Obtener nombre del usuario
+        fetch('/usuario')
+            .then(res => res.json())
+            .then(data => {
+                if (data.nombre) {
+                    document.getElementById('usuarioNombre').textContent = `👤 ${data.nombre}`;
+                }
+            })
+            .catch(err => {
+                console.error('No autenticado o error de sesión:', err);
+            });
+
+        // Cerrar sesión
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            fetch('/logout', {
+                method: 'GET',
+            })
+            .then(() => {
+                window.location.href = '/login.html';
+            })
+            .catch(err => {
+                console.error('Error al cerrar sesión:', err);
+            });
+        });
+    </script>
+
+    <script src="Script/login.js"></script>
+</body>
+</html>

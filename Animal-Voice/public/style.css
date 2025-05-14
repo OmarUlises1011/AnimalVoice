@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #bcbcbcff;
+    color: #333;
+}
+
+/* === CONTAINER GENERAL === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* === HEADER === */
+.header {
+    background-image: url(images/perro1menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* === NAVBAR MENU === */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+.logo {
+    color: #bcbcbc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #bcbcbc;
+    display: block;
+    font-weight: 600;
+}
+
+/* === MENU RESPONSIVE === */
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* === HEADER TEXT === */
+.header-txt {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header-txt h1 {
+    font-size: 45px;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.header-txt p {
+    color: #a0a0a0;
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+    text-align: left;
+}
+
+/* === BOTÓN === */
+.btn-1 {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #afaeae;
+    color: #bcbcbc;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.btn-1:hover {
+    color: #a2a1a1;
+    background-color: #ffffff;
+}
+
+/* === USUARIO INFO Y LOGOUT === */
+#usuarioInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+}
+
+#usuarioNombre {
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 2px #18293A;
+}
+
+#logoutButton {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#logoutButton:hover {
+    background-color: #c0392b;
+}
+
+/* === GENERAL SECTION === */
+.general {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.general-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.general-1, .general-2, .general-3, .general-4, .general-5, .general-6 {
+    flex: 1 1 30%;
+    background-color: #494949;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* === HEADERS === */
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #18293A;
+    margin-bottom: 30px;
+}
+
+.txt h3 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.txt p {
+    font-size: 16px;
+    color: #EBEBEB;
+}
+
+/* === INFO SECTIONS (Ejemplo) === */
+.info-1, .info-2 {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #18293A;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-txt {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+/* === MEDIA QUERIES === */
+@media(max-width: 991px) {
+    .menu {
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #18293A;
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .header {
+        padding: 120px 30px 60px;
+    }
+
+    .header-txt h1 {
+        font-size: 36px;
+    }
+
+    .header-txt p {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    #usuarioInfo {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+    #usuarioNombre {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    #logoutButton {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .general-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        margin-top: 40px;
+    }
+}

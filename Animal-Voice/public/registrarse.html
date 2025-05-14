@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="Estilos/registrarse.css">
+</head>
+<body>
+  <div class="contenedor-de-formulario">
+    <h2>Registro de Usuario</h2>
+    <form id="register-form" method="POST" action="/registrarse">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+      <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+      <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+      <select id="tipo" name="tipo" required>
+        <option value="Ciudadano">Ciudadano</option>
+        <option value="Autoridad">Autoridad</option>
+        <option value="ONG">ONG</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+  </div>
+</body>
+</html>
