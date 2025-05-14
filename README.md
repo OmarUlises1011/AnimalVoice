@@ -7,16 +7,13 @@ El objetivo de esta plataforma es agilizar la respuesta de las autoridades, empo
 
 
 
-2. Estado del Arte
+# Estado del Arte
 El uso de la tecnología para la denuncia y prevención del maltrato animal no es nuevo. Existen plataformas internacionales como "Pet Finder" y "PETA Report Cruelty", que permiten reportar casos de abuso, pero están enfocadas en regiones específicas y no cuentan con integración directa con las autoridades locales de México.
 A nivel nacional, algunas organizaciones como "Huella Roja" y "Proyecto Gran Simio México" han desarrollado campañas en redes sociales y formularios en línea para recibir denuncias, pero carecen de una infraestructura tecnológica robusta para la gestión de estos casos.
 En Jalisco, la Fiscalía General y la Procuraduría de Protección al Ambiente (PROPAE) reciben denuncias por maltrato animal, pero el proceso es burocrático y muchas veces ineficiente, lo que desalienta a los ciudadanos. Además, la falta de integración de datos entre dependencias dificulta el seguimiento de los casos.
 Nuestra plataforma se diferencia al ofrecer un sistema integral que no solo permite la denuncia en tiempo real, sino que también educa, sensibiliza y conecta a la comunidad con recursos y apoyo.
 
-
-
-
-3. Planteamiento del Problema
+# Planteamiento del Problema
 En México, según datos de la AMMVEPE, el 70% de los animales de compañía se encuentran en situación de calle. En Jalisco, la SEMADET ha recibido más de 5,000 denuncias de maltrato animal en los últimos años, pero pocas han derivado en sanciones.
 Los principales problemas son:
 •	Falta de un canal eficiente y accesible de denuncia.
@@ -32,8 +29,7 @@ Se requiere una plataforma digital que facilite y agilice la denuncia, eduque a 
 
 
 
-
-4. Justificación
+# Justificación
 La creación de AnimalVoice se justifica en la necesidad de fortalecer los mecanismos de denuncia de maltrato animal. La plataforma permitirá:
 •	Facilitar el acceso a la denuncia.
 •	Proteger la identidad de los denunciantes.
@@ -42,7 +38,7 @@ La creación de AnimalVoice se justifica en la necesidad de fortalecer los mecan
 •	Vincular a las autoridades y ONGs con los ciudadanos.
 Además, fomentará la sensibilización social hacia el respeto y bienestar animal.
 
-5. Objetivos
+# Objetivos
 Objetivo General:
 Desarrollar una plataforma digital de denuncia de maltrato animal que facilite el reporte de casos, mejore la respuesta de las autoridades y promueva la educación sobre protección animal en México y Jalisco.
 Objetivos Específicos:
@@ -52,15 +48,15 @@ Objetivos Específicos:
 •	Proveer un directorio de ONGs y refugios.
 •	Ofrecer un portal educativo sobre derechos y protección animal.
 •	Fomentar la colaboración con autoridades.
-
-6. Equipo de Trabajo
+ 
+ # Equipo de Trabajo
 •	Desarrolladores: Encargados del diseño y funcionamiento técnico de la plataforma.
 •	Diseñadores UX/UI: Diseñan la interfaz amigable y accesible.
 •	Especialistas en Bienestar Animal: Asesoran en contenido educativo y legal.
 •	Marketing y Comunicación: Difunden la plataforma y generan campañas de sensibilización.
 •	Gestión de Alianzas: Vínculo con ONGs y autoridades.
 
-7. Logros Alcanzados
+#  Logros Alcanzados
 •	Plataforma funcional con formularios de denuncia.
 •	Sistema de carga de evidencias (fotos/videos).
 •	Mapa interactivo de reportes.
