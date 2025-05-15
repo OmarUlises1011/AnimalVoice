@@ -1,4 +1,6 @@
 # AnimalVoice
+# Nova Abud Jorge Ricardo
+# Hernandez Perez Omar Ulises
 1. Introducción
 El maltrato animal es una problemática creciente en México y en el estado de Jalisco, donde miles de animales domésticos y silvestres sufren abuso, abandono y violencia. A pesar de que existen leyes para la protección animal, la falta de canales eficientes para realizar denuncias impide que las autoridades actúen de manera oportuna. Además, muchas personas desconocen los procedimientos legales para reportar estos casos, lo que contribuye a la impunidad.
 En respuesta a esta situación, proponemos el desarrollo de AnimalVoice, una plataforma digital de denuncia de maltrato animal. Esta herramienta permitirá a los ciudadanos reportar casos con evidencia fotográfica y ubicación georreferenciada, garantizando el anonimato si así lo desean. Además, contará con un mapa interactivo, un directorio de ONGs y refugios, y un portal educativo sobre protección animal.
